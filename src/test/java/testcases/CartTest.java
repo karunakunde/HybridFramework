@@ -136,12 +136,13 @@ public class CartTest extends TestBase {
 	}
 	
 	@Test
-    public void testAccessCartWithoutLogin() {
+    public void testAccessCartWithoutLogin() throws InterruptedException {
         // Skipping @BeforeMethod by using a local WebDriver instance
         WebDriver localDriver = new ChromeDriver();
         localDriver.get("https://www.saucedemo.com/cart.html");
 
         String expectedUrl = "https://www.saucedemo.com/";
+        Thread.sleep(3000);
         String actualUrl = localDriver.getCurrentUrl();
         Assert.assertEquals(actualUrl, expectedUrl, "User was not redirected to login page!");
 
@@ -150,9 +151,13 @@ public class CartTest extends TestBase {
 	@AfterMethod
 	public void closeBrowser(ITestResult it) throws IOException
 	{
+		try {
 		if(ITestResult.FAILURE==it.getStatus())
 			Screenshot.takeScreenshot(it.getName());
 		driver.close();
+		}
+		catch(Exception e)
+		{}
 	}
 
 }
