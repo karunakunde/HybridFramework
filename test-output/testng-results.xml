@@ -5,23 +5,23 @@
       <![CDATA[Login successful--https://www.saucedemo.com/inventory.html]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-03-22T01:25:27 IST" name="Default suite" finished-at="2025-03-22T01:25:35 IST" duration-ms="8140">
+  <suite started-at="2025-03-22T01:57:32 IST" name="Default suite" finished-at="2025-03-22T01:57:41 IST" duration-ms="8523">
     <groups>
     </groups>
-    <test started-at="2025-03-22T01:25:27 IST" name="Default test" finished-at="2025-03-22T01:25:35 IST" duration-ms="8140">
+    <test started-at="2025-03-22T01:57:32 IST" name="Default test" finished-at="2025-03-22T01:57:41 IST" duration-ms="8523">
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:27 IST" name="setup" finished-at="2025-03-22T01:25:30 IST" duration-ms="2984" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:57:32 IST" name="setup" finished-at="2025-03-22T01:57:35 IST" duration-ms="3121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logintoapplication()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:30 IST" name="logintoapplication" finished-at="2025-03-22T01:25:31 IST" duration-ms="890" status="PASS">
+        <test-method signature="logintoapplication()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:57:35 IST" name="logintoapplication" finished-at="2025-03-22T01:57:36 IST" duration-ms="849" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login successful--https://www.saucedemo.com/inventory.html]]>
             </line>
           </reporter-output>
         </test-method> <!-- logintoapplication -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:31 IST" name="closeBrowser" finished-at="2025-03-22T01:25:31 IST" duration-ms="79" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:57:36 IST" name="closeBrowser" finished-at="2025-03-22T01:57:36 IST" duration-ms="151" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,15 +32,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:31 IST" name="setup" finished-at="2025-03-22T01:25:33 IST" duration-ms="1976" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:57:36 IST" name="setup" finished-at="2025-03-22T01:57:38 IST" duration-ms="2076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyTitleOfApplication()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:33 IST" name="verifyTitleOfApplication" finished-at="2025-03-22T01:25:33 IST" duration-ms="44" status="PASS">
+        <test-method signature="verifyTitleOfApplication()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:57:38 IST" name="verifyTitleOfApplication" finished-at="2025-03-22T01:57:38 IST" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleOfApplication -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:33 IST" name="closeBrowser" finished-at="2025-03-22T01:25:33 IST" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:57:38 IST" name="closeBrowser" finished-at="2025-03-22T01:57:39 IST" duration-ms="113" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:33 IST" name="setup" finished-at="2025-03-22T01:25:35 IST" duration-ms="1873" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:57:39 IST" name="setup" finished-at="2025-03-22T01:57:41 IST" duration-ms="1949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyURLOfApplication()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:35 IST" name="verifyURLOfApplication" finished-at="2025-03-22T01:25:35 IST" duration-ms="44" status="PASS">
+        <test-method signature="verifyURLOfApplication()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:57:41 IST" name="verifyURLOfApplication" finished-at="2025-03-22T01:57:41 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyURLOfApplication -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:35 IST" name="closeBrowser" finished-at="2025-03-22T01:25:35 IST" duration-ms="99" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:57:41 IST" name="closeBrowser" finished-at="2025-03-22T01:57:41 IST" duration-ms="122" status="PASS">
           <params>
             <param index="0">
               <value>
