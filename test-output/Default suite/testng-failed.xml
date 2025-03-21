@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.CheckoutTest">
+      <class name="testcases.CheckoutStep2Test">
         <methods>
-          <include name="dataDrivenCheckoutTest" invocation-numbers="3"/>
-          <include name="closeBrowser"/>
           <include name="setup"/>
+          <include name="checkFinishBtn"/>
         </methods>
-      </class> <!-- testcases.CheckoutTest -->
+      </class> <!-- testcases.CheckoutStep2Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

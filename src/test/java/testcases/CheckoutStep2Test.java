@@ -34,6 +34,9 @@ public class CheckoutStep2Test extends TestBase{
 		inventory.add3ProductsToCart();
 		inventory.clickOnCart();
 		cartPage.clickOnCheckout();
+		checkout.enterFirstName("karuna");
+		checkout.enterLastName("kunde");
+		checkout.enterPostalZipCode("34555");
 		checkout.clickOnContinue();
 		
 	}
