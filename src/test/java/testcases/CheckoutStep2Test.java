@@ -3,6 +3,8 @@ package testcases;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -12,6 +14,7 @@ import pages.CheckoutStep2;
 import pages.Inventory;
 import pages.Login;
 import testbase.TestBase;
+import utility.Screenshot;
 
 public class CheckoutStep2Test extends TestBase{
 	Login login;
@@ -50,5 +53,15 @@ public class CheckoutStep2Test extends TestBase{
     	 Assert.assertEquals(actual, expected,"Page should be redirected to the Thank You page");
     	 
      }
-
+     @AfterMethod
+ 	public void closeBrowser(ITestResult it) throws IOException
+ 	{
+ 		try {
+ 		if(ITestResult.FAILURE==it.getStatus())
+ 			Screenshot.takeScreenshot(it.getName());
+ 		driver.close();
+ 		}
+ 		catch(Exception e)
+ 		{}
+ 	}
 }

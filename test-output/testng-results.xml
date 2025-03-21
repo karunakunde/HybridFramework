@@ -1,28 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="10" total="11" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Login successful--https://www.saucedemo.com/inventory.html]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-03-22T01:11:22 IST" name="Default suite" finished-at="2025-03-22T01:11:29 IST" duration-ms="6493">
+  <suite started-at="2025-03-22T01:25:27 IST" name="Default suite" finished-at="2025-03-22T01:25:35 IST" duration-ms="8140">
     <groups>
     </groups>
-    <test started-at="2025-03-22T01:11:22 IST" name="Default test" finished-at="2025-03-22T01:11:29 IST" duration-ms="6493">
-      <class name="testcases.CartTest">
-        <test-method signature="testAccessCartWithoutLogin()[pri:0, instance:testcases.CartTest@48075da3]" started-at="2025-03-22T01:11:23 IST" name="testAccessCartWithoutLogin" finished-at="2025-03-22T01:11:29 IST" duration-ms="6440" status="PASS">
+    <test started-at="2025-03-22T01:25:27 IST" name="Default test" finished-at="2025-03-22T01:25:35 IST" duration-ms="8140">
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:27 IST" name="setup" finished-at="2025-03-22T01:25:30 IST" duration-ms="2984" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAccessCartWithoutLogin -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.CartTest@48075da3]" started-at="2025-03-22T01:11:29 IST" name="closeBrowser" finished-at="2025-03-22T01:11:29 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="logintoapplication()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:30 IST" name="logintoapplication" finished-at="2025-03-22T01:25:31 IST" duration-ms="890" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login successful--https://www.saucedemo.com/inventory.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logintoapplication -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:31 IST" name="closeBrowser" finished-at="2025-03-22T01:25:31 IST" duration-ms="79" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAccessCartWithoutLogin status=SUCCESS method=CartTest.testAccessCartWithoutLogin()[pri:0, instance:testcases.CartTest@48075da3] output={null}]]]>
+                <![CDATA[[TestResult name=logintoapplication status=SUCCESS method=LoginTest.logintoapplication()[pri:0, instance:testcases.LoginTest@18271936] output=Login successful--https://www.saucedemo.com/inventory.html]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.CartTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:31 IST" name="setup" finished-at="2025-03-22T01:25:33 IST" duration-ms="1976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTitleOfApplication()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:33 IST" name="verifyTitleOfApplication" finished-at="2025-03-22T01:25:33 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfApplication -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:33 IST" name="closeBrowser" finished-at="2025-03-22T01:25:33 IST" duration-ms="101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitleOfApplication status=SUCCESS method=LoginTest.verifyTitleOfApplication()[pri:0, instance:testcases.LoginTest@18271936] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:33 IST" name="setup" finished-at="2025-03-22T01:25:35 IST" duration-ms="1873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyURLOfApplication()[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:35 IST" name="verifyURLOfApplication" finished-at="2025-03-22T01:25:35 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyURLOfApplication -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.LoginTest@18271936]" started-at="2025-03-22T01:25:35 IST" name="closeBrowser" finished-at="2025-03-22T01:25:35 IST" duration-ms="99" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyURLOfApplication status=SUCCESS method=LoginTest.verifyURLOfApplication()[pri:0, instance:testcases.LoginTest@18271936] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
