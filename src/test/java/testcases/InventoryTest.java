@@ -30,7 +30,7 @@ public class InventoryTest extends TestBase{
 	}
 	
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void add3ProductToCartTest() throws InterruptedException {
 		String expCount="3";
 		inventory.filterNameZToA();
@@ -42,7 +42,7 @@ public class InventoryTest extends TestBase{
 
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void addAll6ProductToCartTest() throws InterruptedException {
 		String expCount="6";
 		inventory.filterNameZToA();
@@ -53,45 +53,45 @@ public class InventoryTest extends TestBase{
 
 
 	}
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyTitleOfApplicaton() {
 		String expUrl = "Swag Labs";
 		String actUrl = inventory.getApplicationTitle();
 		Assert.assertEquals(actUrl, expUrl);
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyHeaderTitle() {
 		String expUrl = "Products";
 		String actUrl = inventory.getHeaderTitle();
 		Assert.assertEquals(actUrl, expUrl);
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyURLOfApplication() {
 		String expUrl = "https://www.saucedemo.com/inventory.html";
 		String actUrl = inventory.getApplicationUrl();
 		Assert.assertEquals(actUrl, expUrl);
 		
 	}
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyFacebookIconDisplayed()
 	{
 		Assert.assertTrue(inventory.isFacebookIconPresent(), "Facebook icon is not displayed");
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyTwitterIconDisplayed()
 	{
 		Assert.assertTrue(inventory.isTwitterIconPresent(), "Twitter icon is not displayed");
 	}
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyLinkedinIconDisplayed()
 	{
 		Assert.assertTrue(inventory.isLinkeinIconPresent(), "Linkedin icon is not displayed");
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testHamburgerMenu() throws InterruptedException
 	{
 		inventory.clickHamburgerMenu();

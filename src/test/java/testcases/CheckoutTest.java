@@ -43,7 +43,7 @@ public class CheckoutTest extends TestBase{
 		
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testCheckout() throws InterruptedException
 	{
 		checkout.enterFirstName("Karuna");

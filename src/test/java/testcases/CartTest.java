@@ -35,14 +35,14 @@ public class CartTest extends TestBase {
 	    cartPage = new CartPage();
 				
 	}
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyApplicationUrl()
 	{
 		String actual = inventory.getApplicationUrl();
 		String expected = "https://www.saucedemo.com/cart.html";
 		Assert.assertEquals(actual, expected);
 	}
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyApplicationTitle()
 	{
 		String actual = inventory.getApplicationTitle();
@@ -51,7 +51,7 @@ public class CartTest extends TestBase {
 	}
 	
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyCheckout() throws InterruptedException
 	{
 		cartPage.clickOnCheckout();
@@ -61,7 +61,7 @@ public class CartTest extends TestBase {
 		Assert.assertEquals(actual, expected);
 		
 	}
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyContinueShoppingBtn() throws InterruptedException
 	{
 		cartPage.continueShoppingBtn();
@@ -72,7 +72,7 @@ public class CartTest extends TestBase {
 		Reporter.log("Continue shpooing button working as expected");
 	}
 	
-	@Test(priority = 1,enabled = false)
+	@Test(enabled = true)
 	public void verifyAllItemsMenu() throws InterruptedException {
 		cartPage.clickOnHamburgerBtn();
 		Thread.sleep(3000);
@@ -83,7 +83,7 @@ public class CartTest extends TestBase {
 		Reporter.log("All Items Menu working as expected");
 	}
 	
-	@Test(priority = 2,enabled = false)
+	@Test(enabled = true)
 	public void verifyAboutMenu() throws InterruptedException {
 		cartPage.clickOnHamburgerBtn();
 		Thread.sleep(3000);
@@ -93,7 +93,7 @@ public class CartTest extends TestBase {
 		Assert.assertEquals(actual, expected,"About Menu not working as expected");
 		Reporter.log("About menu working as expected");
 	}
-	@Test(priority = 3,enabled = false)
+	@Test(enabled = true)
 	public void verifyLogoutMenu() throws InterruptedException {
 		cartPage.clickOnHamburgerBtn();
 		Thread.sleep(3000);
@@ -104,7 +104,7 @@ public class CartTest extends TestBase {
 		Reporter.log("Logout menu working as expected");
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyResetAppMenu() throws InterruptedException {
 		cartPage.clickOnHamburgerBtn();
 		Thread.sleep(3000);
@@ -114,7 +114,7 @@ public class CartTest extends TestBase {
 		Assert.assertEquals(actual, expected,"Reset Menu not working as expected");
 		Reporter.log("Reset menu working as expected");
 	}
-	@Test(priority = 0,enabled = false)
+	@Test(enabled = true)
 	public void verifyCartAfterRemovingProduct() throws InterruptedException {
 		
 		cartPage.removeTwoProducts();
@@ -125,7 +125,7 @@ public class CartTest extends TestBase {
 		Reporter.log("Product removed from cart successfully");
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyProductNameClickNavigation() {
 		
 		cartPage.clickOnsauceLabBikeLight();
