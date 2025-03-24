@@ -3,21 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.CartTest">
+      <class name="testcases.InventoryTest">
         <methods>
-          <include name="verifyProductNameClickNavigation"/>
-          <include name="verifyContinueShoppingBtn"/>
-          <include name="verifyCheckout"/>
-          <include name="verifyResetAppMenu"/>
-          <include name="verifyAllItemsMenu"/>
-          <include name="verifyAboutMenu"/>
-          <include name="verifyLogoutMenu"/>
+          <include name="testHamburgerMenu"/>
+          <include name="setup"/>
           <include name="closeBrowser"/>
-          <include name="verifyApplicationUrl"/>
-          <include name="verifyApplicationTitle"/>
-          <include name="verifyCartAfterRemovingProduct"/>
         </methods>
-      </class> <!-- testcases.CartTest -->
+      </class> <!-- testcases.InventoryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

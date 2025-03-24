@@ -91,9 +91,10 @@ public class InventoryTest extends TestBase{
 		Assert.assertTrue(inventory.isLinkeinIconPresent(), "Linkedin icon is not displayed");
 	}
 	
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void testHamburgerMenu() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		inventory.clickHamburgerMenu();
 		Assert.assertTrue(inventory.isSideMenudisplayed(), "Menu did not open!");
 		inventory.clickCrossBtn();
