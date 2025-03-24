@@ -23,7 +23,7 @@ public class CartTest extends TestBase {
 	Inventory inventory;
 	CartPage cartPage;
 	
-	//@BeforeMethod
+	@BeforeMethod
 	public void setup() throws IOException {
 		
 		initialization();
@@ -135,7 +135,7 @@ public class CartTest extends TestBase {
 		Reporter.log("");
 	}
 	
-	@Test
+	@Test(enabled = true)
     public void testAccessCartWithoutLogin() throws InterruptedException {
         // Skipping @BeforeMethod by using a local WebDriver instance
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\darek\\.cache\\selenium\\chromedriver\\win64\\134.0.6998.165\\chromedriver.exe");

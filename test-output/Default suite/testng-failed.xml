@@ -5,8 +5,17 @@
     <classes>
       <class name="testcases.CartTest">
         <methods>
-          <include name="testAccessCartWithoutLogin"/>
+          <include name="verifyProductNameClickNavigation"/>
+          <include name="verifyContinueShoppingBtn"/>
+          <include name="verifyCheckout"/>
+          <include name="verifyResetAppMenu"/>
+          <include name="verifyAllItemsMenu"/>
+          <include name="verifyAboutMenu"/>
+          <include name="verifyLogoutMenu"/>
           <include name="closeBrowser"/>
+          <include name="verifyApplicationUrl"/>
+          <include name="verifyApplicationTitle"/>
+          <include name="verifyCartAfterRemovingProduct"/>
         </methods>
       </class> <!-- testcases.CartTest -->
     </classes>
