@@ -1,9 +1,11 @@
 package testbase;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -18,11 +20,23 @@ public class TestBase {
 	{
 		String browser = ReadData.readProperty("Browser");
 		String url = ReadData.readProperty("URL");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-save-password-bubble");
+		options.addArguments("--disable-infobars");
+		options.addArguments("--incognito");
+
+		options.setExperimentalOption("prefs", new HashMap<String, Object>() {{
+		    put("credentials_enable_service", false);
+		    put("profile.password_manager_enabled", false);
+		}});
+
+
 		
 		switch(browser) {
 		
+		                
 		case "chrome" : System.setProperty("webdriver.chrome.driver", "C:\\Users\\darek\\.cache\\selenium\\chromedriver\\win64\\134.0.6998.165\\chromedriver.exe");
-						driver =new ChromeDriver();
+						driver =new ChromeDriver(options);
 						break;
 		case "edge" :   WebDriverManager.edgedriver();
 						driver =new EdgeDriver();

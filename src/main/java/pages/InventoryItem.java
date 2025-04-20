@@ -5,6 +5,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.NoSuchElementException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -146,9 +147,10 @@ public class InventoryItem extends TestBase {
 		allProductMenuBtn.click();
 	}
 	
-	public void clickAboutLink()
+	public void clickAboutLink( WebElement menuButton)
 	{
-		aboutMenuBtn.click();
+		menuButton.click();
+		
 	}
 	
 	public void clickLogouLink()

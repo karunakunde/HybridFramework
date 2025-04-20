@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testcases.InventoryItemTest">
+        <methods>
+          <include name="verifyAllItemsMenuBtn"/>
+          <include name="verifyLogoutMenuBtn"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="verifyAboutMenuBtn"/>
+        </methods>
+      </class> <!-- testcases.InventoryItemTest -->
+      <class name="testcases.InventoryTest">
+        <methods>
+          <include name="setup"/>
+          <include name="add3ProductToCartTest"/>
+          <include name="closeBrowser"/>
+          <include name="addAll6ProductToCartTest"/>
+          <include name="removefromcartTest"/>
+        </methods>
+      </class> <!-- testcases.InventoryTest -->
+      <class name="testcases.CartTest">
+        <methods>
+          <include name="verifyProductNameClickNavigation"/>
+          <include name="verifyContinueShoppingBtn"/>
+          <include name="verifyCheckout"/>
+          <include name="verifyAllItemsMenu"/>
+          <include name="verifyResetAppMenu"/>
+          <include name="verifyAboutMenu"/>
+          <include name="verifyLogoutMenu"/>
+          <include name="closeBrowser"/>
+          <include name="verifyApplicationUrl"/>
+          <include name="verifyCartAfterRemovingProduct"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.CartTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

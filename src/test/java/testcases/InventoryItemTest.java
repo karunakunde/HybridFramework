@@ -1,7 +1,12 @@
 package testcases;
 
 import java.io.IOException;
+import java.time.Duration;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -20,6 +25,7 @@ public class InventoryItemTest extends TestBase {
 	Login login;
 	Inventory inventory;
 	InventoryItem item;
+	WebDriverWait wait;
 	
 	@BeforeMethod
 	void setup() throws IOException
@@ -30,7 +36,7 @@ public class InventoryItemTest extends TestBase {
 		item = new InventoryItem();
 		login.logintoapplication();
 		inventory.openProductDetail();
-		
+		wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		
 		
 	}
@@ -102,8 +108,10 @@ public class InventoryItemTest extends TestBase {
 	{
 		item.clickHamburgerBtn();
         Thread.sleep(3000);
+		WebElement menuButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='about_sidebar_link']")));
 
-		item.clickAboutLink();
+		item.clickAboutLink(menuButton);
+		wait.until(ExpectedConditions.urlToBe("https://saucelabs.com/"));
 		String actual = item.getApplicationUrl();
 		String expected = "https://saucelabs.com/";
 		Assert.assertEquals(actual, expected,"Not navigated to about page");
@@ -161,7 +169,7 @@ public class InventoryItemTest extends TestBase {
 		{
 			Screenshot.takeScreenshot(iTestResult.getName());
 		}
-		driver.close();
+	driver.close();
 	}
 	
 	
