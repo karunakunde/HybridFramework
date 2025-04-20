@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Test') {
             steps {
-                bat script: 'mv clean test -Dbrowser=localchrome -X'
+                bat script: 'mvn clean test -Dbrowser=localchrome -X'
             }
         }
     }
