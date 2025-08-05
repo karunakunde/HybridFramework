@@ -25,9 +25,10 @@ public class CheckoutStep2Test extends TestBase{
 	
 	
 	@BeforeMethod
-	public void setup() throws IOException
+	public void setup() throws IOException, InterruptedException
 	{
 		initialization();
+		Thread.sleep(5000);
 		login = new Login();
 		inventory=new Inventory();
 		cartPage = new CartPage();
