@@ -1,8 +1,12 @@
 # HybridFramework 🚀
 
 ## 📌 Overview
-HybridFramework is a **Java-based automation testing framework** designed to combine the strengths of multiple testing approaches.  
-It provides a scalable, maintainable, and reusable structure for automated test execution.
+This project automates login and cart flow of SauceDemo website using Selenium WebDriver, Java and TestNG.
+
+Framework includes:
+- Page Object Model
+- Explicit Wait
+- TestNG execution
 
 ---
 
