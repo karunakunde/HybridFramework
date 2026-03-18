@@ -25,9 +25,6 @@ HybridFramework/
 │── testng.xml          # Test suite configuration
 │── Jenkinsfile         # CI/CD pipeline
 │── .gitignore          # Ignored files
-│── .classpath/.project # Eclipse project files
-
-
 ---
 
 ## ⚙️ Features
