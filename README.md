@@ -1,7 +1,7 @@
 # HybridFramework 🚀
 
 ## 📌 Overview
-HybridFramework is a **Java-based automation testing framework** designed to combine the strengths of multiple testing approaches (Data-Driven + Keyword-Driven + Modular).  
+HybridFramework is a **Java-based automation testing framework** designed to combine the strengths of multiple testing approaches.  
 It provides a scalable, maintainable, and reusable structure for automated test execution.
 
 ---
