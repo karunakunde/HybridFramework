@@ -16,8 +16,9 @@ It provides a scalable, maintainable, and reusable structure for automated test 
 - **Browser Driver:** ChromeDriver (v138)
 
 ---
-
 ## 📂 Project Structure
+
+```
 HybridFramework/
 │── src/                # Source code
 │── test-output/        # TestNG reports
@@ -26,8 +27,7 @@ HybridFramework/
 │── Jenkinsfile         # CI/CD pipeline
 │── .gitignore          # Ignored files
 │── .classpath/.project # Eclipse project files
-
----
+```
 
 ## ⚙️ Features
 - Modular test case design for reusability
